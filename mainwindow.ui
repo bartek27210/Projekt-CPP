@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QUIZ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background:url(:/images/Resources/Images/grad.png)</string>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>40</y>
+      <width>501</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="background">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>381</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QCommandLinkButton" name="Kategoria1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+        <underline>false</underline>
+        <strikeout>false</strikeout>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kat1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="Kategoria2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kat2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="Kategoria3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kat3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="Kategoria4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="kat4">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_nick">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>320</y>
+        <width>151</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+font: 14pt &quot;alamakota&quot;;
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="zmien_nick">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>320</y>
+        <width>121</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: #efa564;
+color:#7a4a0b;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: #ce790a;
+}
+QPushButton:pressed {
+background-color: white;
+color: #ce790a;
+border-style: inset;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Zmień nick</string>
+      </property>
+     </widget>
+     <zorder>kat4</zorder>
+     <zorder>kat3</zorder>
+     <zorder>kat2</zorder>
+     <zorder>Kategoria2</zorder>
+     <zorder>kat1</zorder>
+     <zorder>Kategoria1</zorder>
+     <zorder>Kategoria3</zorder>
+     <zorder>Kategoria4</zorder>
+     <zorder>label_nick</zorder>
+     <zorder>zmien_nick</zorder>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="Pytanie">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>50</y>
+        <width>271</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>600</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <stylestrategy>PreferDefault</stylestrategy>
+       </font>
+      </property>
+      <property name="text">
+       <string>Pytanie, poprawna c</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>99</x>
+        <y>110</y>
+        <width>281</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QRadioButton" name="radioButton_1">
+         <property name="text">
+          <string>a</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="text">
+          <string>b</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="text">
+          <string>c</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="text">
+          <string>d</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="Tlo_pytania">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>381</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Dobrze">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>120</y>
+        <width>101</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Zle">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>130</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>250</y>
+        <width>351</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="wyslij">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: #efa564;
+color:#87450c;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: #87450c;
+}
+QPushButton:pressed {
+background-color: #87450c;
+color: white;
+border-style: inset;
+}
+QPushButton:disabled{
+background-color: #f7c191;   
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: beige;
+opacity: 0.6;
+}</string>
+         </property>
+         <property name="text">
+          <string>Sprawdź</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Nastepne">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: #efa564;
+color:#87450c;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: #87450c;
+}
+QPushButton:pressed {
+background-color: white;
+color: #87450c;
+border-style: inset;
+}
+QPushButton:disabled{
+background-color: #f7c191;   
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: beige;
+opacity: 0.6;
+}</string>
+         </property>
+         <property name="text">
+          <string>Nastepne Pytanie</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_nick2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>340</y>
+        <width>181</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+font: 14pt &quot;alamakota&quot;;
+color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_gracz">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>340</y>
+        <width>101</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777209</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 87 14pt &quot;Arial Black&quot;;
+color:#ff9400;   </string>
+      </property>
+      <property name="text">
+       <string>GRACZ:</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="buddy">
+       <cstring></cstring>
+      </property>
+     </widget>
+     <zorder>Tlo_pytania</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>Pytanie</zorder>
+     <zorder>Zle</zorder>
+     <zorder>horizontalLayoutWidget_2</zorder>
+     <zorder>Dobrze</zorder>
+     <zorder>label_nick2</zorder>
+     <zorder>label_gracz</zorder>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLineEdit" name="lineEdit_nick">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>90</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_nick">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>151</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: #efa564;
+color:#7a4a0b;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: #ce790a;
+}
+QPushButton:pressed {
+background-color: white;
+color: #ce790a;
+border-style: inset;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Potwierdź nick</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="wynik">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>391</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="wynikgracza">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>140</y>
+        <width>311</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size:15px;
+font: 12pt &quot;MaszynaAEG&quot;;
+font-style:italic;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="background_ranking">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>10</y>
+        <width>301</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>20</y>
+        <width>261</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="rang1">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang2">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang3">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang4">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang5">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang6">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang7">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="rang8">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+font: 9pt &quot;alamakota&quot;;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>451</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="StronaGlowna">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <pointsize>10</pointsize>
+         <weight>10</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+font: 87 10pt &quot;Arial Black&quot;;
+ background-color: #4CAF50;
+color:white;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: beige;
+}
+QPushButton:pressed {
+background:none;
+background-color: white;
+color: #4CAF50;
+border-style: inset;
+border-color:#4CAF50;
+}</string>
+       </property>
+       <property name="text">
+        <string>Strona Główa</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Kategorie">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+font: 87 10pt &quot;Arial Black&quot;;
+ background-color: #4CAF50;
+color:white;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: beige;
+}
+QPushButton:pressed {
+background:none;
+background-color: white;
+color: #4CAF50;
+border-style: inset;
+border-color:#4CAF50;
+}</string>
+       </property>
+       <property name="text">
+        <string>Kategorie</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Ranking">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+font: 87 10pt &quot;Arial Black&quot;;
+ background-color: #4CAF50;
+color:white;    
+border-style: outset;
+border-width: 5px;
+border-radius: 14px;
+border-color: beige;
+}
+QPushButton:pressed {
+background:none;
+background-color: white;
+color: #4CAF50;
+border-style: inset;
+border-color: #4CAF50;
+}</string>
+       </property>
+       <property name="text">
+        <string>Ranking</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="wholebackground">
+    <property name="geometry">
+     <rect>
+      <x>-6</x>
+      <y>0</y>
+      <width>531</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>wholebackground</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
